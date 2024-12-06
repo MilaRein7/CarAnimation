@@ -1,0 +1,132 @@
+body {
+    background-color: rgb(80, 126, 37);
+}
+
+.car {
+    position: absolute;
+    animation: CarAnimation 10s ease-in-out infinite;
+}
+
+@keyframes CarAnimation {
+    0% {
+        transform: translateX(-450px);
+    }
+    100% {
+        transform: translateX(1870px);
+    }
+}
+
+.body1 {
+    background-color: rgb(29, 29, 29);
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    position: absolute;
+    left: 245px; 
+}
+
+.body2 {
+    background-color: rgb(29, 29, 29);
+    width: 200px;
+    height: 70px;
+    border-radius: 200px;
+    position: absolute;
+    left: 200px;
+    top: 30px;
+}
+
+.wheelfront {
+    background-color: rgb(49, 49, 49);
+    width: 45px;
+    height: 40px;
+    border-radius: 100px;
+    position: absolute;
+    top: 70px;
+    left: 308px;
+    animation: wheelfrontAnimation 2s linear infinite;
+
+}
+
+@keyframes wheelfrontAnimation {
+    0% {
+        transform: rotate(0deg);  /* Используем transform для вращения */
+    }
+    100% {
+        transform: rotate(360deg); /* И продолжаем вращать */
+    }
+}
+
+.wheelback {
+    background-color: rgb(49, 49, 49);
+    width: 45px;
+    height: 40px;
+    border-radius: 100px;
+    position: absolute;
+    top: 70px;
+    left: 240px;
+    animation: wheelbackAnimation 2s linear infinite;
+}
+
+@keyframes wheelbackAnimation {
+    0% {
+        transform: rotate(0deg);  
+    }
+    100% {
+        transform: rotate(360deg); 
+    }
+}
+
+.headlight {
+    background-color: rgb(245, 227, 146);
+    width: 18px;
+    height: 15px;
+    border-radius: 100px;
+    position: absolute;
+    left: 370px;
+    top: 60px;
+    animation: headlightAnimation 5s ease-in-out infinite;
+}
+
+@keyframes headlightAnimation {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 0;
+    } 
+}
+
+.door1 {
+    background-color: rgb(57, 57, 58);
+    height: 30px;
+    width: 25px;
+    position: absolute;
+    left: 305px;
+    top: 24px;
+}
+
+.door2 {
+    background-color: rgb(57, 57, 58);
+    height: 30px;
+    width: 25px;
+    position: absolute;
+    left: 265px;
+    top: 24px;
+}
+
+.ride {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(116, 74, 35);
+    margin-top: 100px;
+}
+
+
+.all {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
